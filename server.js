@@ -53,19 +53,19 @@ const url =
 	"mongodb+srv://pradnyaBaad:PdVPzoPrzbIBcTwb@cluster0.djrjwkp.mongodb.net/";
 mongoose.connect(url).then(console.log("connected successfully"));
 
-app.post("/", async (req, res) => {
+app.post("/public/", async (req, res) => {
 	res.sendFile(path.join(staticDirectory, "index.html"));
 });
 
-app.post("/welcomePage", async (req, res) => {
+app.post("/public/welcomePage", async (req, res) => {
 	res.sendFile(path.join(staticDirectory, "welcomePage.html"));
 });
 
-app.post("/registration", async (req, res) => {
+app.post("/public/registration", async (req, res) => {
 	res.sendFile(path.join(staticDirectory, "registration.html"));
 });
 
-app.post("/signin", async (req, res) => {
+app.post("/public/signin", async (req, res) => {
 	res.sendFile(path.join(staticDirectory, "signin.html"));
 });
 
@@ -129,7 +129,7 @@ app.post("/calculateCalories", async (req, res) => {
 	}
 });
 
-app.post("/dashboard", async (req, res) => {
+app.post("/public/dashboard", async (req, res) => {
 	// Assume 'parameterValue' is the parameter you want to send
 	const parameterValue = req.body.user; // Adjust this to extract the parameter from the request
 	// Read the contents of demo.html
