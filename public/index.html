@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitGenius</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation">
+        <div id="logoCon">
+            <img src="images/logo.png" alt="logo.png" id="logoimg"></img>
+<pre id="logoText">
+
+Fit
+Genius</pre>
+        </div>
+        <ul>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">How does it works</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><form action="/signin" method="post"><input type="image" src="images/signInImage.png" alt="sign.png" id="signInImg"></input></form></li>
+        </ul>
+    </nav>
+    <div class="front">
+        <!-- <div class="blender"></div> -->
+        <pre id="mainheading">Reach your goals
+with <span style="color: #FF4739;">FitGenius</span></pre>
+        <pre id="subheading">Build healthy habits with the all-in-one food,
+exercise, and calorie tracker.</pre>
+        <form action="/welcomePage" method="post">
+            <input id="startnow" type="submit" value="Start Now">
+        </form>
+        <img src="images/frontImage.png" alt="frontimg" id="frontimg">
+    </div>
+    <div class="middleSection">
+        <div class="upperHead">
+            <img src="images/logo.png" alt="logo.png" class="imgLogo"></img>
+            <p class="heading">HIT YOUR HEALTH GOALS IN 1-2-3</p>
+        </div>
+        <div class="middleHead">
+            <div class="middleHead1">
+                <div class="content">
+                    <span class="number">1</span>
+                    <p class="contentHeading">Track your Daily Calorie Intake</p>
+                    <p class="contentLine">Calculate your Daily Calorie Intake according to your goal.</p>
+                </div>
+                <img src="images/welcome-img1.png" alt="" width="500rem" height="500rem" style="border-radius: 1rem;">
+            </div>
+
+            <div class="middleHead2">
+                <img src="images/welcome-img2.png" alt="" width="500rem" height="500rem" style="border-radius: 1rem;">
+                <div class="content">
+                    <span class="number">2</span>
+                    <p class="contentHeading">Learn what works</p>
+                    <p class="contentLine">Personalized nutrition insights reveal what's working so you can make smarter choices.</p>
+                </div>
+            </div>
+
+            <div class="middleHead3">
+                <div class="content">
+                    <span class="number">3</span>
+                    <p class="contentHeading">Change your habits and reach your goals</p>
+                    <p class="contentLine">Now you have the tools and knowledge to build healthy habits for life.</p>
+                </div>
+                <img src="images/welcome-img3.png" alt="" width="500rem" height="500rem" style="border-radius: 1rem;">
+            </div>
+        </div>
+        <div class="hiddenDiv">
+
+        </div>
+    </div>
+    <div class="quiz-section">
+        <div class="upperLogo">
+            <img src="images/arrowpattern.png" alt="" style="width: 15rem; height: 10rem; margin-right: 3rem;">
+        </div>
+
+        <div class="lowerContent" style="color: #F4F1EC;">
+            <p>GET YOUR <span style="color: #FF4739; margin-right: 6rem;">PERSONALIZED</span></p>
+            <p style="color:#FF4739; margin-right: 6rem;">DAILY PLAN</p>
+            <form action="/welcomePage" method="post">
+                <input id="startQuiz" type="submit" value="Start Quiz">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

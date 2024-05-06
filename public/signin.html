@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="signinstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="formDisplayer">
+        <div class="contentHolder">
+            <div class="upper">
+                <h2 class="mainHeading">Login</h2>
+                <p class="subHeading">To existing account</p>
+            </div>
+            <div class="middle">
+                <input type="text" id="username" placeholder="USERNAME" value="">
+                <input type="password" id="password" placeholder="PASSWORD" value="">
+                <form action="/welcomePage" method="post">
+                    <input type="submit" value="submit" style="display: none;" id="signupsubmitbtn">
+                </form>
+                <p class="subHeading">Don't have account?<span class="signUp" onclick="signUpSubmit()">Sign up</span></p>
+            </div>
+            <div class="btnSpace">
+                <form action="/" method="post">
+                    <input class="backbtn" type="submit" value="Back"></input>
+                </form>
+                <form action="/dashboard" method="post" onsubmit="return validatePassword(event)">
+                    <input type="hidden" id="hiddenuser" name="user" value="hii">
+                    <input class="nextbtn" type="submit" value="Sign in">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="signinscript.js"></script>
+</body>
+</html>

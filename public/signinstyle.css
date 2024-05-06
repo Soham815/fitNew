@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    flex-direction: column;
+}
+
+.formDisplayer{
+    position: relative;
+    height: 50%;
+    width: 30%;
+    background: linear-gradient(180deg, #101010, #291012, #341014);
+    border-radius: 16px;
+    /* border: 5px solid;
+    border-image: linear-gradient(90deg, rgba(57,255,20,1) 0%, rgba(136,255,12,1) 25%, rgba(176,255,8,1) 50%, rgba(215,255,4,1) 75%, rgba(255,255,0,1) 100%) 1;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    box-shadow: rgba(72, 135, 202, 0.4) 0 0 90px 33px;
+    /* z-index: -2; */    
+}
+
+.contentHolder{
+    height: 95%;
+    width: 90%;
+    margin: 1px 5px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* background-color: pink; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainHeading{
+    color: #FF4739;
+    /* font-family: 'Ubuntu'; */
+    font-size: 2rem;
+    /* background-color: purple; */
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.subHeading{
+    color: white;
+    /* font-family: 'Ubuntu'; */
+    font-size: 0.9rem;
+    margin: 3px;
+    text-align: center;
+}
+
+.middle{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+#username, #password{
+    background-color: transparent;
+    border: 1px solid #F4F1EC;
+    color: #808080;
+    /* font-family: 'Roboto'; */
+    padding: 1rem;
+    width: 24rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    color-scheme: dark;
+}
+
+.subHeading .signUp{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btnSpace{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: orange; */
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.backbtn, .nextbtn{
+    width: 7rem;
+    height: 3rem; 
+    border-radius: 30px;
+    cursor: pointer;
+    /* font-family: 'Roboto'; */
+    font-weight: bolder;
+    border: 2px solid #FF4739;
+    
+}
+
+.nextbtn{
+    background-color: #FF4739;
+    color: #000;
+}
+
+.backbtn{
+    border: 2px solid #FF4739;
+    background-color: transparent;
+    color: #FF4739;
+}
+

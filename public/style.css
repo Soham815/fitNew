@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000000;
+	width: 100vw;
+}
+
+.navigation {
+	display: flex;
+	height: 12vh;
+	width: 100vw;
+	/* background-color: green; */
+	align-items: center;
+	justify-content: space-around;
+	overflow: hidden;
+}
+
+#logoCon {
+	display: flex;
+	height: 100%;
+	/* background-color: blue; */
+	align-items: center;
+	/* justify-content: center; */
+}
+
+#logoimg {
+	height: 80%;
+	width: 40%;
+}
+
+#logoText {
+	text-transform: uppercase;
+	color: #ff4739;
+	font-family: "Anta";
+	font-size: 1.3rem;
+	font-weight: bolder;
+	line-height: 1.3rem;
+	/* background-color: red; */
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	/* background-color: red; */
+	list-style-type: none;
+}
+
+ul li {
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+
+ul li a {
+	text-decoration: none;
+	margin: 1rem;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-family: "Work Sans";
+	/* background-color: pink; */
+}
+
+#signInImg {
+	position: relative;
+	top: 0.2rem;
+	height: 3rem;
+	width: 3rem;
+	margin-top: 0;
+}
+
+.front {
+	display: inline-block;
+	width: 100%;
+	height: 88vh;
+	overflow: hidden;
+}
+
+#frontimg {
+	height: 100%;
+	float: right;
+}
+/* .blender{
+    height: 88vh;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    box-shadow: 5px #000;
+    position: absolute;
+    left: 32rem;
+} */
+
+#mainheading {
+	font-family: "Anta";
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 5rem;
+	color: #f4f1ec;
+	position: absolute;
+	/* background-color: red; */
+	line-height: 4.5rem;
+	left: 7rem;
+	top: 18rem;
+}
+
+#subheading {
+	font-family: "Roboto";
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	color: #fff;
+	position: absolute;
+	/* line-height: 4.5rem; */
+	left: 7rem;
+	top: 28rem;
+	/* background-color: red; */
+}
+
+#startnow {
+	width: 15rem;
+	height: 3.2rem;
+	color: #f4f1ec;
+	background-color: #ff4739;
+	border: none;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	font-family: "Roboto";
+	position: absolute;
+	left: 7rem;
+	top: 38rem;
+	cursor: pointer;
+}
+
+.middleSection {
+	width: 100vw;
+	background: linear-gradient(180deg, #101010, #291012, #341014);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.upperHead {
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.imgLogo {
+	width: 10rem;
+}
+
+.heading {
+	color: #f4f1ec;
+	font-size: 3rem;
+	font-family: "Anta";
+}
+
+.middleHead {
+	width: 100%;
+	color: #f4f1ec;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.middleHead1,
+.middleHead2,
+.middleHead3 {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 0 0;
+}
+
+.content {
+	/* margin-right: 20rem; */
+	width: 31%;
+}
+
+.number {
+	font-size: 5rem;
+	font-family: "Anta";
+	font-weight: bolder;
+}
+
+.contentHeading {
+	font-family: "Anta";
+	font-size: 3rem;
+	line-height: 3rem;
+	margin-bottom: 1rem;
+}
+
+.contentLine {
+	font-family: "Work Sans";
+	font-size: 1.2rem;
+}
+
+.hiddenDiv {
+	width: 100%;
+	height: 2rem;
+	background-color: transparent;
+}
+
+.quiz-section {
+	background-image: url("images/Land\ Back-1.png");
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.upperLogo {
+	height: 50%;
+	width: 100%;
+	/* background-color: blue; */
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.lowerContent {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	align-items: end;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 6rem;
+	font-family: "Anta";
+}
+
+#startQuiz {
+	width: 15rem;
+	height: 3.2rem;
+	color: #000;
+	background-color: #fff;
+	border: none;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	font-family: "Roboto";
+	cursor: pointer;
+	margin-right: 6rem;
+}

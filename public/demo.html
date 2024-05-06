@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Your Free Account</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+		/>
+	</head>
+	<body class="h-screen flex items-center justify-center bg-black font-inter">
+		<!-- Form 1 -->
+		<div
+			class="form-displayer bg-gradient-to-r from-gray-800 via-darkpurple to-darkred rounded-lg shadow-lg p-8 w-96"
+		>
+			<div class="content-holder h-full flex flex-col justify-between">
+				<div>
+					<h2 class="text-red-500 text-2xl mb-4">What's your first name?</h2>
+					<p class="text-white mb-2">We're happy you're here.</p>
+					<p class="text-white mb-4">Let's get to know a little about you.</p>
+				</div>
+				<div class="middle">
+					<input
+						type="text"
+						id="firstName"
+						placeholder="FIRST NAME"
+						class="bg-transparent border border-gray-300 text-gray-500 px-4 py-2 w-72 rounded"
+					/>
+				</div>
+				<div class="btn-space mt-4">
+					<button
+						class="back-btn border border-red-500 text-red-500 px-6 py-3 rounded"
+						onclick=""
+					>
+						Back
+					</button>
+					<button
+						class="next-btn bg-red-500 text-black px-6 py-3 rounded"
+						onclick="showNext()"
+					>
+						Next
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Form 2 -->
+		<div
+			class="form-displayer bg-gradient-to-r from-gray-800 via-darkpurple to-darkred rounded-lg shadow-lg p-8 w-96"
+		>
+			<div class="content-holder">
+				<h2 class="text-red-500 text-2xl mb-4">Thanks! Now for your goals.</h2>
+				<p class="text-white mb-2">
+					Select up to 3 that are important to you, including one
+				</p>
+				<p class="text-white mb-4">weight goal.</p>
+				<div class="option-list space-y-2">
+					<button
+						class="option bg-transparent border border-gray-300 text-white px-4 py-2 w-72 rounded"
+					>
+						Lose Weight
+					</button>
+					<button
+						class="option bg-transparent border border-gray-300 text-white px-4 py-2 w-72 rounded"
+					>
+						Maintain Weight
+					</button>
+					<!-- Add other buttons similarly -->
+				</div>
+				<div class="btn-space mt-4">
+					<button
+						class="back-btn border border-red-500 text-red-500 px-6 py-3 rounded"
+						onclick="showPrev()"
+					>
+						Back
+					</button>
+					<button
+						class="next-btn bg-red-500 text-black px-6 py-3 rounded"
+						onclick="showNext()"
+					>
+						Next
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Form 3 -->
+		<!-- Add similar structure for Form 3, Form 4, and Form 5 -->
+
+		<span class="progressbar"></span>
+		<script>
+			/* hiddenuser_placeholder */
+		</script>
+		<script src="demoScript.js"></script>
+	</body>
+</html>
